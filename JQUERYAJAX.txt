@@ -1,0 +1,29 @@
+Değişkenler ve tanımlayıcılar $ işaretiyle başlar.
+Örneğin => $('p') => sayfadaki tüm paragraflar	
+	=> $('p,img') => sayfadaki ayrı ayrı paragraflar ve resimler
+	=> $('p img') => sayfadaki paragraflar içerisindeki resimler.
+CSS secicileri belirlemek için # ve . kullanılır.
+Örneğin => $("#metin") => id tanımlanmıssa
+	=> $(".metin") => class tanımlanmıssa
+|JQUERY'de Olaylar|
+1.sayfa ilk yüklendiğinde calısan olay;
+$(document).ready(çalışacak fonksiyon adı);
+Örneğin => $(document).ready(MesajGoster);
+2.Anonim Olaylar
+Örnegin => $(document).ready(funciton(){console.log("Hello");});
+3.Olay Yardımcıları => Click(),dblClick(),mouseover(),focus(),submit(),keydown() gibi
+4.Olay İşleme => bind(),unbind(),one(),trigger() gibi
+5.Etkileşim yardımcıları => Hover(),Toggle()
+Maus ile ilgili olan eventlarda on u kullanıyoruz.Yani şöyle ;
+$("p").on(mouseover : function(){$(this).css("color","blue");}) gibi
+hide() => gizleme olayını tetikler. Bunun tam tersi yani gösterme olayı da show().Bunların bir arada
+oldugu komut ise toggle komutu.
+css() => css özelliklerini değiştirmek istersek css etiketini kullanıyoruz. 
+$("#id").css("background-color":"white")
+append() => Seçtiğimiz kısma yazı olarak Ekleme olayında kullanıyoruz.
+$.each(diziismi,function(key,value){
+	Console.log(key) => key seçersek indexlerini sırayla yazdırır.Eğer value yazdırırsak o index
+e ait olan deger yada isim yazdırılır sırayla.
+})
+
+
